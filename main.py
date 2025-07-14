@@ -267,7 +267,7 @@ if user_breed:
                 ing: clf.decision_function(kw_combined)[0]
                 for ing, clf in ingredient_models.items()
             }
-            top_ings = sorted(ing_scores.items(), key=lambda x: x[1], reverse=True)[:10]
+            top_ings = sorted(ing_scores.items(), key=lambda x: x[1], reverse=True)
             top_ings = [i.title() for i, _ in top_ings]
 
             # 10.4) Top-3 similar products
